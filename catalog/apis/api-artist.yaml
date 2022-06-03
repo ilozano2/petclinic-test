@@ -8,12 +8,12 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: pet-team
-  system: pet-topia
+  owner: artist-team
+  system: artist-topia
   definition: |
     openapi: "3.0.0"
     info:
-      version: 1.0.0
+      version: 2.0.0
       title: Artist API
       license:
         name: MIT
@@ -22,4 +22,4 @@ spec:
     paths:
       /artists:
         get:
-          summary: List all artists
+          summary: List all artists version 2
