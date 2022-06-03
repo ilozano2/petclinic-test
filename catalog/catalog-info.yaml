@@ -14,3 +14,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: default-team
+  targets:
+    - ./apis/api-artist.yaml
