@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Location
 metadata:
   name: spring-petclinic-4
   description: Spring PetClinic 4
@@ -11,8 +11,5 @@ metadata:
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-petclinic-4'
 spec:
-  type: service
-  lifecycle: experimental
-  owner: default-team
   targets:
     - ./apis/api-artist.yaml
