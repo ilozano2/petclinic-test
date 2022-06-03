@@ -4,16 +4,16 @@ metadata:
   name: artist-api
   description: Retrieve artist details
   annotations:
-  'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=petclinic'
+  'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-petclinic-4'
 spec:
   type: openapi
   lifecycle: production
-  owner: artist-team
+  owner: default-team
   system: artist-topia
   definition: |
     openapi: "3.0.0"
     info:
-      version: 2.0.0
+      version: 4.0.0
       title: Artist API
       license:
         name: MIT
@@ -22,6 +22,6 @@ spec:
     paths:
       /artists:
         get:
-          summary: List all artists version 2
+          summary: List all artists version 4
     groupId: artists-group-api
 
